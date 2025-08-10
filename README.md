@@ -27,13 +27,13 @@ It implements a basic protocol to transmit strings from a client process to a se
 ### 1️⃣ Compile
 make
 
-2️⃣ Start the server
+### 2️⃣ Start the server
 ./server
 
-3️⃣ Send a message from the client
+### 3️⃣ Send a message from the client
 ./client <SERVER_PID> "Your message here"
 
-📂 Project Structure
+## 📂 Project Structure
 
 ├── client.c      # Client program
 ├── server.c      # Server program
@@ -41,7 +41,7 @@ make
 ├── Makefile      # Build rules
 └── README.md     # Project documentation
 
-🧠 Skills Developed
+## 🧠 Skills Developed
 
 Signal handling with sigaction
 
