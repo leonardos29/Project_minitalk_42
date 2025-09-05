@@ -19,28 +19,31 @@ It implements a basic protocol to transmit strings from a client process to a se
 - Bitwise operations for character encoding and decoding
 - Handles message termination and multiple consecutive messages
 - Uses `sigaction` for robust and asynchronous signal handling
-
+- Implements ACK mechanism for reliable bit-by-bit transmission
 ---
 
 ## 🚀 Usage
 
 ### 1️⃣ Compile
+```bash
 make
-
+```
 ### 2️⃣ Start the server
+```bash
 ./server
-
+```
 ### 3️⃣ Send a message from the client
+```bash
 ./client <SERVER_PID> "Your message here"
-
+```
 ## 📂 Project Structure
-
+```bash
 ├── client.c      # Client program
 ├── server.c      # Server program
 ├── minitalk.h    # Header file
 ├── Makefile      # Build rules
 └── README.md     # Project documentation
-
+```
 ## 🧠 Skills Developed
 
 Signal handling with sigaction
@@ -50,6 +53,8 @@ Inter-process communication (IPC)` in C
 Bit manipulation for data transmission
 
 Event-driven programming without blocking loops
+
+Implementing ACK-based synchronization for reliable messaging
 
 Strong debugging skills for asynchronous processes
 
