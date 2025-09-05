@@ -9,10 +9,11 @@ SRC_SERVER = server.c \
 			 libft/ft_printf/ft_handle_char.c \
 			  libft/ft_printf/ft_handle_hex.c \
 			  libft/ft_printf/ft_handle_int.c \
-			 libft/ft_printf/ft_printf.c
+			 libft/ft_printf/ft_printf.c\
 
 SRC_CLIENT = client.c \
 			 libft/ft_atoi.c \
+			 libft/ft_printf/ft_handle_char.c
 
 OBJ_SERVER = $(SRC_SERVER:.c=.o)
 OBJ_CLIENT = $(SRC_CLIENT:.c=.o)
@@ -30,7 +31,7 @@ $(CLIENT): $(OBJ_CLIENT)
 
 clean:
 	@echo "Limpando os arquivos .o ..."
-	@rm -f *.o libft/*.o
+	@rm -f *.o libft/*.o libft/ft_printf/*.o
 
 fclean: clean
 	@echo "Limpando os arquivos .o e os executaveis ..."

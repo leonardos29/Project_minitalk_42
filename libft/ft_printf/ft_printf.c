@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: leonardo_ouza <leonardo_ouza@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/28 19:25:51 by leonardo_ou       #+#    #+#             */
-/*   Updated: 2025/08/10 16:01:14 by leonardo_ou      ###   ########.fr       */
+/*   Created: 2025/09/05 02:55:55 by leonardo_ou       #+#    #+#             */
+/*   Updated: 2025/09/05 02:56:16 by leonardo_ou      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,21 @@ int	ft_printf(const char *format, ...)
 			size += ft_putchar(format[i]);
 		i++;
 	}
-	va_end(args);
 	return (size);
 }
+/*
+int	main(void)
+{
+    char	*nome = "Leonardo";
+	int		idade = 20;
+	int		*ptr  = &idade;
+	
+	printf("Usando Ft_printf : \n");
+	int	result = ft_printf("Meu nome é %s e tenho %p anos\n", nome,ptr);
+	printf("%d \n",result);
+	
+	printf("Usando printf : \n");
+	int	result2 = printf("Meu nome é %s e tenho %p anos\n", nome,ptr);
+	printf("%d \n",result2);
+}
+*/

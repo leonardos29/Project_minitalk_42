@@ -6,24 +6,18 @@
 /*   By: leonardo_ouza <leonardo_ouza@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 19:26:45 by leonardo_ou       #+#    #+#             */
-/*   Updated: 2025/07/29 01:39:50 by leonardo_ou      ###   ########.fr       */
+/*   Updated: 2025/09/05 03:01:18 by leonardo_ou      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef MINITALK_H
 # define MINITALK_H
 
-# include <stdio.h>
 # include <stdarg.h>
 # include <unistd.h>
 # include <stddef.h>
 # include <stdlib.h>
 # include <signal.h>
-# include <sys/types.h>
-
-# ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 1024
-# endif
 
 int		ft_printf(const char *format, ...);
 int		ft_putchar(int c);
