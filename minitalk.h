@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   minitalk.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: leonardo_ouza <leonardo_ouza@student.42    +#+  +:+       +#+        */
+/*   By: leonasil <leonasil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 19:26:45 by leonardo_ou       #+#    #+#             */
-/*   Updated: 2025/09/05 03:01:18 by leonardo_ou      ###   ########.fr       */
+/*   Updated: 2025/09/06 08:11:50 by leonasil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,9 @@
 # include <stddef.h>
 # include <stdlib.h>
 # include <signal.h>
+# include <asm-generic/siginfo.h>
+# include <sys/types.h>
+# include <asm-generic/signal-defs.h>
 
 int		ft_printf(const char *format, ...);
 int		ft_putchar(int c);
